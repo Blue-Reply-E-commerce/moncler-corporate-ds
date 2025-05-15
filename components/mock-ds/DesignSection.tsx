@@ -18,6 +18,7 @@ import { FinancialCalendar } from "../ui/molecules/listing-info/calendar-list";
 import { ResourcesList } from "../ui/molecules/listing-info/resource-list";
 import { InfoRowList } from "../ui/molecules/listing-info/row-list";
 import { TabLayout } from "../ui/molecules/tab-layout";
+import ContentModuleSection from "./ContentModuleSection";
 import SelectExample from "./SelectSection";
 
 const actionListItems = [
@@ -354,6 +355,8 @@ export default function DesignSection() {
       <TabLayout tabs={tabsData} withBackground />
       <TabLayout tabs={tabsData} withBorder={false} />
       <TabLayout tabs={tabsData} />
+
+      <ContentModuleSection />
 
       <div className="flex flex-col gap-y-4">
         <AccordionListRow title="shareholder infos" items={infoRowListItems} />
